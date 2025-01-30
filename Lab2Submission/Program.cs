@@ -45,7 +45,7 @@ foreach (Employee employee in employeeList)
     total += employee.CalculatePay();
 }
 double average = total / employeeList.Count;
-Console.WriteLine($"The average weekly pay for all employees is: {average.ToString("f2")}");
+Console.WriteLine($"The average weekly salary pay for all employees is: {average.ToString("f2")}");
 
 // The highest weekly pay for wage employees
 double highest = 0;
@@ -70,7 +70,7 @@ foreach (Employee employee in employeeList)
         highestName = employee.Name;          
     }
 }
-Console.WriteLine($"The highest weekly pay for the wage employees is {highest.ToString("f2")} - {highestName}");
+Console.WriteLine($"The highest weekly salary pay for the wage employees is {highest.ToString("f2")} - {highestName}");
 
 // The lowest weekly pay for the salaried employees
 double lowest = 0;
@@ -93,7 +93,7 @@ foreach (Employee employee in employeeList)
         lowestName = employee.Name;             
     }
 }
-Console.WriteLine($"The lowest salary for the salaried employees {lowest.ToString("f2")} - {lowestName}");
+Console.WriteLine($"The lowest weekly salary pay for the salaried employees is {lowest.ToString("f2")} - {lowestName}");
 
 // Percentage of each employee category
 double countSalaried = 0;
